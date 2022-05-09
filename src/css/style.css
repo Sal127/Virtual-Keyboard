@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: rgba(135, 179, 142, 0.726);
+    /* overflow: hidden; */
+}
+.title {
+  text-align: center;
+  font-size: 20px;
+}
+textarea {
+    display: block;
+    margin: 1em auto;
+    padding: 0.4em;
+    width: 90%;
+    height: 30%;
+    resize: none;
+    font-size: 1.2em;
+    font-family: system-ui, monospace;
+    border-radius: 5px;
+}
+.keyboard {
+    position: fixed;
+    left: 465px;
+    bottom: 212px;
+    width: 878px;
+    padding: 5px 0;
+    background: white;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    
+  }
+  
+  .keyboard-keys {
+    text-align: center;
+  }
+  
+  .keyboard-key {
+    height: 45px;
+    width: 6%;
+    max-width: 90px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background: rgb(67, 64, 64);
+    color: rgb(176, 8, 8);
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+  }
+  
+  .keyboard-key:active {
+    background: rgba(216, 240, 4, 0.808);
+  }
+  .keyboard-key:hover {
+    background-color: antiquewhite;
+  }
+  .active {
+    background: rgba(216, 240, 4, 0.808);
+  }
+  .keyboard-wide {
+    width: 12%;
+  }
+  .keyboard-wide-capslk {
+    width: 12%;
+  }
+  .keyboard-wide-shiftL {
+    width: 12%;
+  }
+  .keyboard-wide-shiftR {
+    width: 12%;
+  }
+  .keyboard-extrawide {
+    width: 36%;
+    max-width: 500px;
+  }
+  
+  .keyboard-active::after {
+    content: "";
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(184, 167, 167, 0.684);
+    border-radius: 50%;
+  }
+  
+  .keyboard-check::after {
+    background: #08ff00;
+  }
+  
+  
